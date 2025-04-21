@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#a292ac url(Color_Hunt.png) repeat-x;
+	font-family: Raleway;
+	font-size:12px;
+	color:#080b02;
+	letter-spacing:0.1em;
+}
+
+a:link,
+a:visited {
+	color: #0b0315;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #021b28;
+}
+
+a img {
+	border:none;
+}
+
+#header {
+	width:800px;
+	height:133px;
+	margin:0 auto;
+	
+}
+
+#header h1 {
+	width:390px;
+	height:63px;
+	padding-top:25px;
+	float:left;
+	line-height:1.6em;
+	font-size:24px;
+	font-weight:bold;
+	color:#101601;
+	
+}
+
+#header .copy {
+	width:390px;
+	height:53px;
+	padding-top:35px;
+	float:right;
+	line-height:2em;
+	text-align:right;
+	color:#121703;
+	
+}
+
+#navi {
+
+	width:800px;
+	height:46px;
+	list-style-type:none;
+	text-align:center;
+	overflow: hidden;
+	position: relative;
+}
+  
+#navi li {
+	width:160px;
+	height:46px;
+	float:left;
+}
+
+#navi li a {
+	display:block;
+	width:160px;
+	height:36px;
+	padding-top:15px;
+	float:left;
+	line-height:1.6em;
+	background-color: #a292ac;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+	text-decoration:none;
+	color:#1d124b;
+	transition: background-color 0.3s;
+	
+}
+
+#navi li a:hover {
+	background-position:0 -46px;
+	color: white;
+}
+
+
+#navi li a::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	left: 0;
+	bottom: 5px;
+	background-color: white;
+	transition: width 0.3s ease-in-out;
+  }
+  
+  #navi li a:hover::after {
+	width: 100%;
+}
